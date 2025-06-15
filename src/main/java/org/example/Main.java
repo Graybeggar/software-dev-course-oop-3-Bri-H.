@@ -61,7 +61,7 @@ public class Main {
         System.out.println("Enter page count:");
         int pageCount = scanner.nextInt();
 
-        library.add(new Book(title, author, year, pageCount));
+        library.add(new Book(title, year, author, pageCount)); //argument order to match the constructor parameters.
     }
 
     public static void addNewAlbum() {
@@ -74,7 +74,7 @@ public class Main {
         System.out.println("Enter track count:");
         int trackCount = scanner.nextInt();
 
-        library.add(new Album(title, author, year, trackCount));
+        library.add(new Album(title, year, author, trackCount));
     }
 
     public static void addNewMovie() {
@@ -87,7 +87,7 @@ public class Main {
         System.out.println("Enter duration in minutes:");
         int durationInMinutes = scanner.nextInt();
 
-        library.add(new Movie(title, author, year, durationInMinutes));
+        library.add(new Movie(title, year, author, durationInMinutes)); //Swap author and year in constructor calls to match the constructor parameter order.
     }
 
     public static void readBooks() {
